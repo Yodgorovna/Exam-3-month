@@ -190,4 +190,81 @@ main {
       }
     }
   }
+
+  ///////////////////SECTION COMPLEATED /////////////////////
+
+  .compleated {
+    .container {
+      .compleated-content {
+        max-width: 667px;
+        .title {
+          font-family: Exo2-Semibold;
+          font-size: 48px;
+          line-height: 60px;
+          text-align: left;
+          color: $title-btn-color;
+          margin-bottom: 32px;
+        }
+        p {
+          font-family: PT Sans;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: left;
+          color: $p-color;
+          margin-bottom: 56px;
+        }
+        .cards {
+          @include flex-items();
+          justify-content: space-between;
+          gap: 30px;
+          .card {
+            padding: 0px 70px 0px 32px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px 0px #0000001f;
+            img {
+              margin: 0px -70px 0px -32px;
+              border-radius: 10px 10px 0 0;
+              margin-bottom: 24px;
+            }
+            .card-title {
+              font-family: Exo2-Semibold;
+              font-size: 20px;
+              line-height: 27px;
+              text-align: left;
+              margin-bottom: 16px;
+              color: $title-btn-color;
+            }
+            .card-description {
+              font-family: PT Sans;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+              text-align: left;
+              color: $p-color;
+              margin-bottom: 32px;
+            }
+            .card-price {
+              font-family: Exo 2;
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 21.6px;
+              text-align: left;
+              color: $title-btn-color;
+              margin-bottom: 10px;
+            }
+            .line {
+              border: 3px solid $line-color;
+              max-width: 75px;
+              margin-bottom: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .client {
+    margin-top: 212px;
+    background-color: $main-color;
+  }
 }

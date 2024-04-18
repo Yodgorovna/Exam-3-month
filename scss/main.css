@@ -201,4 +201,74 @@ main .lorems .container .cards .card .card-title p {
   line-height: 24px;
   text-align: left;
   color: #6b6b6c;
+}
+main .compleated .container .compleated-content {
+  max-width: 667px;
+}
+main .compleated .container .compleated-content .title {
+  font-family: Exo2-Semibold;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: left;
+  color: #363738;
+  margin-bottom: 32px;
+}
+main .compleated .container .compleated-content p {
+  font-family: PT Sans;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #6b6b6c;
+  margin-bottom: 56px;
+}
+main .compleated .container .compleated-content .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+main .compleated .container .compleated-content .cards .card {
+  padding: 0px 70px 0px 32px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1215686275);
+}
+main .compleated .container .compleated-content .cards .card img {
+  margin: 0px -70px 0px -32px;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 24px;
+}
+main .compleated .container .compleated-content .cards .card .card-title {
+  font-family: Exo2-Semibold;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: left;
+  margin-bottom: 16px;
+  color: #363738;
+}
+main .compleated .container .compleated-content .cards .card .card-description {
+  font-family: PT Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #6b6b6c;
+  margin-bottom: 32px;
+}
+main .compleated .container .compleated-content .cards .card .card-price {
+  font-family: Exo 2;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.6px;
+  text-align: left;
+  color: #363738;
+  margin-bottom: 10px;
+}
+main .compleated .container .compleated-content .cards .card .line {
+  border: 3px solid #ffce50;
+  max-width: 75px;
+  margin-bottom: 32px;
+}
+main .client {
+  margin-top: 212px;
+  background-color: #0b7572;
 }/*# sourceMappingURL=main.css.map */
