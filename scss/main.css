@@ -36,6 +36,10 @@ li {
   src: url(../../fonts/Exo_2/static/Exo2-SemiBold.ttf);
 }
 @font-face {
+  font-family: Exo2;
+  src: url(../../fonts/Exo_2/static/Exo2-Medium.ttf);
+}
+@font-face {
   font-family: Pt Sans;
   src: url(../../fonts/PT_Sans/PTSans-Regular.ttf);
 }
@@ -43,6 +47,109 @@ li {
   font-family: Pt Sans-Bold;
   src: url(../../fonts/PT_Sans/PTSans-Bold.ttf);
 }
+@font-face {
+  font-family: Familjen Grotesk;
+  src: url(../../fonts/Familjen_Grotesk/static/FamiljenGrotesk-Medium.ttf);
+}
+@font-face {
+  font-family: Open Sans;
+  src: url(../../fonts/Open_Sans/static/OpenSans-SemiBold.ttf);
+}
+footer {
+  background-color: #0b7572;
+  padding: 59px 95px;
+}
+footer .footer-content {
+  display: flex;
+}
+footer .footer-content h1 {
+  font-family: Familjen Grotesk;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 90px;
+  letter-spacing: 0.16em;
+  text-align: left;
+  line-height: 90px;
+  letter-spacing: 0.16em;
+  color: #fff;
+}
+footer .footer-content .catalog {
+  margin-top: 21px;
+  margin-left: 134px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 25px;
+  color: #fff;
+}
+footer .footer-content .catalog h6 {
+  font-family: Exo2-Semibold;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 19.5px;
+  letter-spacing: 0.16em;
+  text-align: center;
+}
+footer .footer-content .d2 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  color: #fff;
+  margin-top: 24px;
+  margin-left: 97px;
+}
+footer .footer-content .d2 h6 {
+  font-family: Exo2;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 19.5px;
+  letter-spacing: 0.16em;
+  text-align: left;
+}
+footer .footer-content .sotsets {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 24px;
+  margin-left: 180px;
+}
+footer .footer-content .sotsets .sotset {
+  display: flex;
+  gap: 14px;
+}
+footer .footer-content .sotsets .phone {
+  font-family: Exo2-Semibold;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 19.5px;
+  text-align: left;
+  color: #fff;
+}
+footer .footer-content .sotsets button {
+  background-color: #ff9619;
+  border: 1px solid #ff9619;
+  padding: 7px 11px;
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 19.5px;
+  text-align: left;
+  text-transform: uppercase;
+}
+footer .footer-content .sotsets button img {
+  margin-left: 14px;
+}
+footer .footer-text {
+  font-family: Exo2;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.16em;
+  text-align: center;
+  color: #fff;
+  margin-top: 80px;
+}
+
 main .hero .container .heros {
   display: flex;
   align-items: center;
@@ -135,20 +242,34 @@ main .search .container .cards .end {
   border-right: none;
 }
 main .profitable .container .profitable-content {
-  display: flex;
-  align-items: center;
+  position: relative;
+  margin-top: 100px;
 }
-main .profitable .container .profitable-content .title {
+main .profitable .container .profitable-content h2 {
+  position: absolute;
+  top: 178px;
+  left: 90px;
+  z-index: 2;
+  max-width: 350px;
+  color: #fff;
   font-family: Exo2-Semibold;
   font-size: 48px;
-  line-height: 60px;
-  text-align: left;
-  color: #fff;
-  background-color: #0b7572;
-  padding: 178px 317px 167px 90px;
+  font-weight: 600;
+  line-height: 125%;
 }
-main .profitable .container .profitable-content img {
-  background-color: rgba(0, 0, 0, 0.1490196078);
+main .profitable .container .profitable-content .rectangle {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+}
+main .profitable .container .profitable-content .main1 {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  max-width: 100%;
 }
 main .lorems {
   margin-top: 72px;
@@ -289,7 +410,7 @@ main .client .container .client-content .table {
   background-color: #fff;
   padding: 28px 41px;
   border-radius: 8px;
-  max-width: 652px;
+  max-width: 690px;
 }
 main .client .container .client-content .table .table-content {
   display: flex;
@@ -300,12 +421,14 @@ main .client .container .client-content .table .table-content p {
   font-size: 11px;
   line-height: 16.5px;
   text-align: left;
-  max-width: 274px;
 }
 main .client .container .client-content .table .line {
   border: 1px solid #d7d7dd;
   margin: 32px 0;
   max-width: 588px;
+}
+main .client .container .client-content table {
+  padding: 16px;
 }
 main .client .container .client-content table .th-title {
   background-color: #0b7572;
@@ -320,11 +443,15 @@ main .client .container .client-content table .th-title th {
   padding: 8px 36px;
   background-color: #0b7572;
 }
+main .client .container .client-content table tr {
+  max-width: 173px;
+  width: 100%;
+}
 main .client .container .client-content table tr td {
-  padding: 16px;
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   background-color: #f9f9fb;
+  padding: 16px;
 }
 main .client .container .client-content table tr td p {
   font-family: PT Sans;
@@ -332,6 +459,7 @@ main .client .container .client-content table tr td p {
   line-height: 18.9px;
   text-align: left;
   color: #6b6b6c;
+  max-width: 141px;
 }
 main .client .container .client-content table tr td h5 {
   font-family: Exo2-Semibold;
@@ -350,9 +478,10 @@ main .client .container .client-content table tr td .title {
 }
 main .client .container .client-content table tr td .phone {
   font-family: PT Sans;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 18.9px;
   text-align: left;
+  max-width: 117px;
 }
 main .delivery {
   margin: 120px 0;
@@ -543,4 +672,75 @@ main .employee .container .cards .four {
 }
 main .employee .container .cards .six {
   padding: 32px 195px 40px 32px;
+}
+main .contact .container .contact-title {
+  font-family: Exo2-Semibold;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: left;
+  margin-bottom: 72px;
+}
+main .contact .container .contacts-inn {
+  display: flex;
+  gap: 198px;
+}
+main .contact .container .contacts-inn .contacts .phones {
+  display: flex;
+  gap: 36px;
+  margin: 22px 0;
+}
+main .contact .container .contacts-inn .contacts .phones .phone .title {
+  font-family: PT Sans;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+}
+main .contact .container .contacts-inn .contacts .phones .phone .description {
+  font-family: Exo2-Semibold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+  width: 188px;
+}
+main .contact .container .contacts-inn .inn {
+  border: 1px solid #e9eaf2;
+  border-radius: 5px;
+  background-color: #f9f9fb;
+  padding: 40px 48px;
+}
+main .contact .container .contacts-inn .inn .inn-content {
+  display: flex;
+  gap: 56px;
+  border-bottom: 1px solid #e9eaf2;
+  padding: 16px 0;
+}
+main .contact .container .contacts-inn .inn .inn-content p {
+  font-family: PT Sans;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  color: #6b6b6c;
+  max-width: 175px;
+  width: 100%;
+}
+main .contact .container .contacts-inn .inn .inn-content h5 {
+  font-family: Exo2-Semibold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #363738;
+}
+main .videos {
+  margin: 46px 0;
+}
+main .videos .container .video {
+  background-image: url(../images/image-end.png);
+  padding: 304px 593px;
+}
+main .videos .container .video .play {
+  width: 60px;
+  height: 60px;
+  padding: 13px 13px 12px 20px;
+  background-color: #fff;
+  border-radius: 30px;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */

@@ -111,24 +111,34 @@ main {
   .profitable {
     .container {
       .profitable-content {
-        @include flex-items();
-        .title {
+        position: relative;
+        margin-top: 100px;
+        h2 {
+          position: absolute;
+          top: 178px;
+          left: 90px;
+          z-index: 2;
+          max-width: 350px;
+          // max-width: 362px;
+          color: $second-color;
           font-family: Exo2-Semibold;
           font-size: 48px;
-          line-height: 60px;
-          text-align: left;
-          color: $second-color;
-          background-color: $main-color;
-          padding: 178px 317px 167px 90px;
-          // border-bottom: 200px solid $main-color;
-          // border-left: 200px solid transparent;
-          // border-right: 0px solid transparent;
-          // height: 0;
-          // width: 100px;
+          font-weight: 600;
+          line-height: 125%;
         }
-        img {
-          // height: 0;
-          background-color: #00000026;
+        .rectangle {
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          max-width: 100%;
+        }
+        .main1 {
+          position: absolute;
+          z-index: 0;
+          top: 0;
+          right: 0;
+          max-width: 100%;
         }
       }
     }
@@ -285,7 +295,7 @@ main {
           background-color: $second-color;
           padding: 28px 41px;
           border-radius: 8px;
-          max-width: 652px;
+          max-width: 690px;
           .table-content {
             display: flex;
             gap: 194px;
@@ -294,7 +304,7 @@ main {
               font-size: 11px;
               line-height: 16.5px;
               text-align: left;
-              max-width: 274px;
+              // max-width: 274px;
             }
           }
           .line {
@@ -304,6 +314,7 @@ main {
           }
         }
         table {
+          padding: 16px;
           .th-title {
             background-color: $main-color;
             th {
@@ -318,17 +329,20 @@ main {
             }
           }
           tr {
+            max-width: 173px;
+            width: 100%;
             td {
-              padding: 16px;
               border-left: 1px solid #00000033;
               border-bottom: 1px solid #00000033;
               background-color: #f9f9fb;
+              padding: 16px;
               p {
                 font-family: PT Sans;
                 font-size: 14px;
                 line-height: 18.9px;
                 text-align: left;
                 color: $p-color;
+                max-width: 141px;
               }
               h5 {
                 font-family: Exo2-Semibold;
@@ -347,9 +361,10 @@ main {
               }
               .phone {
                 font-family: PT Sans;
-                font-size: 14px;
+                font-size: 12px;
                 line-height: 18.9px;
                 text-align: left;
+                max-width: 117px;
               }
             }
           }
@@ -573,5 +588,92 @@ main {
     }
   }
 
-  ///////////////////SECTION EMPLOYEE /////////////////////
+  ///////////////////SECTION CONTACT /////////////////////
+
+  .contact {
+    .container {
+      .contact-title {
+        font-family: Exo2-Semibold;
+        font-size: 48px;
+        line-height: 60px;
+        text-align: left;
+        margin-bottom: 72px;
+      }
+
+      .contacts-inn {
+        display: flex;
+        gap: 198px;
+        .contacts {
+          .phones {
+            display: flex;
+            gap: 36px;
+            margin: 22px 0;
+            .phone {
+              .title {
+                font-family: PT Sans;
+                font-size: 14px;
+                line-height: 21px;
+                text-align: left;
+              }
+              .description {
+                font-family: Exo2-Semibold;
+                font-size: 20px;
+                line-height: 24px;
+                text-align: left;
+                width: 188px;
+              }
+            }
+          }
+        }
+
+        .inn {
+          border: 1px solid #e9eaf2;
+          border-radius: 5px;
+          background-color: #f9f9fb;
+          padding: 40px 48px;
+          .inn-content {
+            display: flex;
+            gap: 56px;
+            border-bottom: 1px solid #e9eaf2;
+            padding: 16px 0;
+            p {
+              font-family: PT Sans;
+              font-size: 16px;
+              line-height: 20px;
+              text-align: left;
+              color: $p-color;
+              max-width: 175px;
+              width: 100%;
+            }
+            h5 {
+              font-family: Exo2-Semibold;
+              font-size: 16px;
+              line-height: 20px;
+              color: $title-btn-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ///////////////////SECTION VIDEOS /////////////////////
+
+  .videos {
+    margin: 46px 0;
+    .container {
+      .video {
+        background-image: url(../images/image-end.png);
+        padding: 304px 593px;
+        .play {
+          width: 60px;
+          height: 60px;
+          padding: 13px 13px 12px 20px;
+          background-color: #fff;
+          border-radius: 30px;
+          align-items: center;
+        }
+      }
+    }
+  }
 }
