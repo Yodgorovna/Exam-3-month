@@ -403,4 +403,144 @@ main .delivery .container .delivery-content .cards .card .card-content p {
   font-size: 16px;
   line-height: 24px;
   max-width: 568px;
+}
+main .trust .container .trust-content {
+  font-family: Exo2-Semibold;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: left;
+  margin-bottom: 90px;
+  color: #363738;
+}
+main .trust .container .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding: 0 60px;
+}
+main .trust .container .cards .card {
+  border-right: 1px solid #d7d7dd;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-right: 57px;
+}
+main .trust .container .cards .card img {
+  margin-bottom: 32px;
+}
+main .trust .container .cards .card .title {
+  font-family: Exo2-Semibold;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 14px;
+}
+main .trust .container .cards .card p {
+  font-family: PT Sans;
+  font-size: 14px;
+  line-height: 21px;
+  color: #6b6b6c;
+  max-width: 184px;
+}
+main .trust .container .cards .four {
+  border-right: none;
+  padding-right: none;
+}
+main .trust .container .cards .four p {
+  max-width: 225px;
+}
+main .trust .container .cards .two {
+  padding-top: 5px;
+}
+main .trust .container .cards .two img {
+  margin-bottom: 58px;
+}
+main .trust .container .cards .three {
+  padding-top: 1px;
+}
+main .trust .container .cards .five {
+  padding-top: 27px;
+}
+main .trust .container .cards .five img {
+  margin-bottom: 56px;
+}
+main .trust .container .cards .six {
+  padding-top: 9px;
+}
+main .trust .container .cards .six img {
+  margin-bottom: 36px;
+}
+main .trust .container .cards .seven {
+  padding-top: 4px;
+  padding-right: 35px;
+}
+main .trust .container .cards .seven img {
+  margin-bottom: 33px;
+}
+main .trust .container .cards .eight {
+  border-right: none;
+  padding-right: none;
+  padding-top: 22px;
+}
+main .trust .container .cards .eight img {
+  margin-bottom: 59px;
+}
+main .employee {
+  margin: 130px 0;
+}
+main .employee .container .employee-title {
+  font-family: Exo2-Semibold;
+  font-size: 48px;
+  line-height: 60px;
+  margin-bottom: 72px;
+}
+main .employee .container .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+main .employee .container .cards .card {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  border-radius: 10px;
+  padding: 32px 179px 40px 32px;
+  display: flex;
+  border-left: 51px solid #0b7572;
+}
+main .employee .container .cards .card .card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+main .employee .container .cards .card .card-content .title {
+  font-family: Exo2-Semibold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 12px;
+  color: #363738;
+}
+main .employee .container .cards .card .card-content p {
+  font-family: PT Sans;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+  margin-bottom: 16px;
+  color: #6b6b6c;
+}
+main .employee .container .cards .card .card-content .seties {
+  display: flex;
+  gap: 20px;
+}
+main .employee .container .cards .card .card-content .line {
+  border: 2px solid #ffce50;
+  max-width: 86px;
+  margin-bottom: 32px;
+}
+main .employee .container .cards .three {
+  padding: 32px 185px 40px 32px;
+}
+main .employee .container .cards .four {
+  padding: 32px 197px 40px 32px;
+}
+main .employee .container .cards .six {
+  padding: 32px 195px 40px 32px;
 }/*# sourceMappingURL=main.css.map */

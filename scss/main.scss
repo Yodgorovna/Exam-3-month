@@ -263,6 +263,8 @@ main {
     }
   }
 
+  ///////////////////SECTION CLIENT /////////////////////
+
   .client {
     margin-top: 212px;
     .container {
@@ -356,6 +358,8 @@ main {
     }
   }
 
+  ///////////////////SECTION DELIVERY /////////////////////
+
   .delivery {
     margin: 120px 0;
     .container {
@@ -408,4 +412,166 @@ main {
       }
     }
   }
+
+  ///////////////////SECTION TRUST /////////////////////
+
+  .trust {
+    .container {
+      .trust-content {
+        font-family: Exo2-Semibold;
+        font-size: 48px;
+        line-height: 60px;
+        text-align: left;
+        margin-bottom: 90px;
+        color: $title-btn-color;
+      }
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        padding: 0 60px;
+        .card {
+          border-right: 1px solid #d7d7dd;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          padding-right: 57px;
+
+          img {
+            margin-bottom: 32px;
+          }
+          .title {
+            font-family: Exo2-Semibold;
+            font-size: 20px;
+            line-height: 27px;
+            margin-bottom: 14px;
+          }
+          p {
+            font-family: PT Sans;
+            font-size: 14px;
+            line-height: 21px;
+            color: $p-color;
+            max-width: 184px;
+          }
+        }
+        .four {
+          border-right: none;
+          padding-right: none;
+          p {
+            max-width: 225px;
+          }
+        }
+        .two {
+          padding-top: 5px;
+          img {
+            margin-bottom: 58px;
+          }
+        }
+        .three {
+          padding-top: 1px;
+        }
+
+        .five {
+          padding-top: 27px;
+          img {
+            margin-bottom: 56px;
+          }
+        }
+
+        .six {
+          padding-top: 9px;
+          img {
+            margin-bottom: 36px;
+          }
+        }
+
+        .seven {
+          padding-top: 4px;
+          padding-right: 35px;
+          img {
+            margin-bottom: 33px;
+          }
+        }
+
+        .eight {
+          border-right: none;
+          padding-right: none;
+          padding-top: 22px;
+          img {
+            margin-bottom: 59px;
+          }
+        }
+      }
+    }
+  }
+
+  ///////////////////SECTION EMPLOYEE /////////////////////
+
+  .employee {
+    margin: 130px 0;
+    .container {
+      .employee-title {
+        font-family: Exo2-Semibold;
+        font-size: 48px;
+        line-height: 60px;
+        margin-bottom: 72px;
+      }
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        .card {
+          box-shadow: 0px 4px 15px 0px #00000026;
+          border-radius: 10px;
+          padding: 32px 179px 40px 32px;
+          display: flex;
+          border-left: 51px solid $main-color;
+          .card-content {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            .title {
+              font-family: Exo2-Semibold;
+              font-size: 20px;
+              line-height: 24px;
+              text-align: left;
+              margin-bottom: 12px;
+              color: $title-btn-color;
+            }
+            p {
+              font-family: PT Sans;
+              font-size: 14px;
+              line-height: 21px;
+              text-align: left;
+              margin-bottom: 16px;
+              color: $p-color;
+            }
+            .seties {
+              display: flex;
+              gap: 20px;
+            }
+
+            .line {
+              border: 2px solid #ffce50;
+              max-width: 86px;
+              margin-bottom: 32px;
+            }
+          }
+        }
+        .three {
+          padding: 32px 185px 40px 32px;
+        }
+
+        .four {
+          padding: 32px 197px 40px 32px;
+        }
+
+        .six {
+          padding: 32px 195px 40px 32px;
+        }
+      }
+    }
+  }
+
+  ///////////////////SECTION EMPLOYEE /////////////////////
 }
