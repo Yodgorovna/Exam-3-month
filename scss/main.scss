@@ -120,8 +120,72 @@ main {
           color: $second-color;
           background-color: $main-color;
           padding: 178px 317px 167px 90px;
+          // border-bottom: 200px solid $main-color;
+          // border-left: 200px solid transparent;
+          // border-right: 0px solid transparent;
+          // height: 0;
+          // width: 100px;
         }
         img {
+          // height: 0;
+          background-color: #00000026;
+        }
+      }
+    }
+  }
+
+  ///////////////////SECTION LOREMS /////////////////////
+
+  .lorems {
+    margin-top: 72px;
+    .container {
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 66px;
+        .card {
+          display: flex;
+          align-items: center;
+          gap: 40px;
+          max-width: 447px;
+          margin: 0px 140px 62px 0px;
+          .circle {
+            width: 80px;
+            height: 80px;
+            background-color: $circle-color;
+            border-radius: 40px;
+            .img1 {
+              margin: 14px 18px 20px;
+            }
+            .img2 {
+              margin: 15px 20px;
+            }
+            .img3 {
+              margin: 18px;
+            }
+            .img4 {
+              margin: 15px 18px;
+            }
+          }
+          .card-title {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            .title {
+              font-family: Exo2-Semibold;
+              font-size: 20px;
+              line-height: 27px;
+              text-align: left;
+              color: $title-btn-color;
+            }
+            p {
+              font-family: PT Sans;
+              font-size: 16px;
+              line-height: 24px;
+              text-align: left;
+              color: $p-color;
+            }
+          }
         }
       }
     }

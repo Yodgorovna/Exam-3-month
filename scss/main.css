@@ -146,4 +146,59 @@ main .profitable .container .profitable-content .title {
   color: #fff;
   background-color: #0b7572;
   padding: 178px 317px 167px 90px;
+}
+main .profitable .container .profitable-content img {
+  background-color: rgba(0, 0, 0, 0.1490196078);
+}
+main .lorems {
+  margin-top: 72px;
+}
+main .lorems .container .cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 66px;
+}
+main .lorems .container .cards .card {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 447px;
+  margin: 0px 140px 62px 0px;
+}
+main .lorems .container .cards .card .circle {
+  width: 80px;
+  height: 80px;
+  background-color: #e9e9ec;
+  border-radius: 40px;
+}
+main .lorems .container .cards .card .circle .img1 {
+  margin: 14px 18px 20px;
+}
+main .lorems .container .cards .card .circle .img2 {
+  margin: 15px 20px;
+}
+main .lorems .container .cards .card .circle .img3 {
+  margin: 18px;
+}
+main .lorems .container .cards .card .circle .img4 {
+  margin: 15px 18px;
+}
+main .lorems .container .cards .card .card-title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+main .lorems .container .cards .card .card-title .title {
+  font-family: Exo2-Semibold;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: left;
+  color: #363738;
+}
+main .lorems .container .cards .card .card-title p {
+  font-family: PT Sans;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #6b6b6c;
 }/*# sourceMappingURL=main.css.map */
