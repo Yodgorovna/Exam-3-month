@@ -270,5 +270,137 @@ main .compleated .container .compleated-content .cards .card .line {
 }
 main .client {
   margin-top: 212px;
+}
+main .client .container .client-content {
   background-color: #0b7572;
+  padding: 85px 66px 85px 81px;
+  display: flex;
+  gap: 70px;
+}
+main .client .container .client-content .title {
+  font-family: Exo2-Semibold;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: left;
+  color: #fff;
+  max-width: 477px;
+}
+main .client .container .client-content .table {
+  background-color: #fff;
+  padding: 28px 41px;
+  border-radius: 8px;
+  max-width: 652px;
+}
+main .client .container .client-content .table .table-content {
+  display: flex;
+  gap: 194px;
+}
+main .client .container .client-content .table .table-content p {
+  font-family: PT Sans;
+  font-size: 11px;
+  line-height: 16.5px;
+  text-align: left;
+  max-width: 274px;
+}
+main .client .container .client-content .table .line {
+  border: 1px solid #d7d7dd;
+  margin: 32px 0;
+  max-width: 588px;
+}
+main .client .container .client-content table .th-title {
+  background-color: #0b7572;
+}
+main .client .container .client-content table .th-title th {
+  font-family: Exo2-Semibold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 8px 36px;
+  background-color: #0b7572;
+}
+main .client .container .client-content table tr td {
+  padding: 16px;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #f9f9fb;
+}
+main .client .container .client-content table tr td p {
+  font-family: PT Sans;
+  font-size: 14px;
+  line-height: 18.9px;
+  text-align: left;
+  color: #6b6b6c;
+}
+main .client .container .client-content table tr td h5 {
+  font-family: Exo2-Semibold;
+  font-size: 14px;
+  line-height: 18.9px;
+  text-align: left;
+  color: #363738;
+}
+main .client .container .client-content table tr td .title {
+  font-family: Pt Sans-Bold;
+  font-size: 14px;
+  line-height: 18.9px;
+  text-align: left;
+  color: #363738;
+  background-color: transparent;
+}
+main .client .container .client-content table tr td .phone {
+  font-family: PT Sans;
+  font-size: 14px;
+  line-height: 18.9px;
+  text-align: left;
+}
+main .delivery {
+  margin: 120px 0;
+}
+main .delivery .container .delivery-content .title {
+  font-family: Exo2-Semibold;
+  font-size: 48px;
+  line-height: 60px;
+  align-items: start;
+  margin-bottom: 48px;
+}
+main .delivery .container .delivery-content .cards {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-direction: column;
+  padding-left: 48px;
+}
+main .delivery .container .delivery-content .cards .card {
+  padding: 32px 96px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1215686275);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+main .delivery .container .delivery-content .cards .card img {
+  border-radius: 4px;
+  margin-right: 56px;
+}
+main .delivery .container .delivery-content .cards .card .card-content {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 24px;
+}
+main .delivery .container .delivery-content .cards .card .card-content .card-title {
+  font-family: Exo2-Semibold;
+  font-size: 20px;
+  line-height: 25px;
+}
+main .delivery .container .delivery-content .cards .card .card-content .card-line {
+  border: 3px solid #ffce50;
+  max-width: 86px;
+  width: 100%;
+}
+main .delivery .container .delivery-content .cards .card .card-content p {
+  font-family: PT Sans;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 568px;
 }/*# sourceMappingURL=main.css.map */

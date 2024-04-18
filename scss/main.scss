@@ -265,6 +265,147 @@ main {
 
   .client {
     margin-top: 212px;
-    background-color: $main-color;
+    .container {
+      .client-content {
+        background-color: $main-color;
+        padding: 85px 66px 85px 81px;
+        display: flex;
+        gap: 70px;
+        .title {
+          font-family: Exo2-Semibold;
+          font-size: 48px;
+          line-height: 60px;
+          text-align: left;
+          color: $second-color;
+          max-width: 477px;
+        }
+        .table {
+          background-color: $second-color;
+          padding: 28px 41px;
+          border-radius: 8px;
+          max-width: 652px;
+          .table-content {
+            display: flex;
+            gap: 194px;
+            p {
+              font-family: PT Sans;
+              font-size: 11px;
+              line-height: 16.5px;
+              text-align: left;
+              max-width: 274px;
+            }
+          }
+          .line {
+            border: 1px solid #d7d7dd;
+            margin: 32px 0;
+            max-width: 588px;
+          }
+        }
+        table {
+          .th-title {
+            background-color: $main-color;
+            th {
+              font-family: Exo2-Semibold;
+              font-size: 16px;
+              line-height: 24px;
+              text-align: center;
+              color: $second-color;
+              border-left: 1px solid #00000033;
+              padding: 8px 36px;
+              background-color: $main-color;
+            }
+          }
+          tr {
+            td {
+              padding: 16px;
+              border-left: 1px solid #00000033;
+              border-bottom: 1px solid #00000033;
+              background-color: #f9f9fb;
+              p {
+                font-family: PT Sans;
+                font-size: 14px;
+                line-height: 18.9px;
+                text-align: left;
+                color: $p-color;
+              }
+              h5 {
+                font-family: Exo2-Semibold;
+                font-size: 14px;
+                line-height: 18.9px;
+                text-align: left;
+                color: $title-btn-color;
+              }
+              .title {
+                font-family: Pt Sans-Bold;
+                font-size: 14px;
+                line-height: 18.9px;
+                text-align: left;
+                color: $title-btn-color;
+                background-color: transparent;
+              }
+              .phone {
+                font-family: PT Sans;
+                font-size: 14px;
+                line-height: 18.9px;
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .delivery {
+    margin: 120px 0;
+    .container {
+      .delivery-content {
+        .title {
+          font-family: Exo2-Semibold;
+          font-size: 48px;
+          line-height: 60px;
+          align-items: start;
+          margin-bottom: 48px;
+        }
+        .cards {
+          @include flex-items();
+          gap: 24px;
+          flex-direction: column;
+          padding-left: 48px;
+          .card {
+            padding: 32px 96px;
+            box-shadow: 0px 4px 15px 0px #0000001f;
+            border-radius: 10px;
+            @include flex-items();
+            img {
+              border-radius: 4px;
+              margin-right: 56px;
+            }
+            .card-content {
+              display: flex;
+              align-items: start;
+              flex-direction: column;
+              gap: 24px;
+              .card-title {
+                font-family: Exo2-Semibold;
+                font-size: 20px;
+                line-height: 25px;
+              }
+              .card-line {
+                border: 3px solid #ffce50;
+                max-width: 86px;
+                width: 100%;
+              }
+              p {
+                font-family: PT Sans;
+                font-size: 16px;
+                line-height: 24px;
+                max-width: 568px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
