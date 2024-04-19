@@ -25,3 +25,33 @@ button {
 li {
   list-style: none;
 }
+
+@media (max-width: 768px) {
+  body,
+  html {
+    padding-top: 117px;
+    // font-family: "Poppins";
+    // overflow-x: hidden;
+  }
+  .container {
+    max-width: 730px;
+    // width: 100%;
+    // margin: 0 auto;
+    // padding: 0 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  body,
+  html {
+    padding-top: 75px;
+    // font-family: "Poppins";
+    // overflow-x: hidden;
+  }
+  .container {
+    max-width: 415px;
+    // width: 100%;
+    // margin: 0 auto;
+    // padding: 0 20px;
+  }
+}

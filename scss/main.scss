@@ -254,7 +254,7 @@ main {
               margin-bottom: 32px;
             }
             .card-price {
-              font-family: Exo 2;
+              font-family: Exo2-Semibold;
               font-size: 16px;
               font-weight: 600;
               line-height: 21.6px;
@@ -317,6 +317,7 @@ main {
           padding: 16px;
           .th-title {
             background-color: $main-color;
+            border-right: 1px solid rgb(0, 0, 0, 0.2);
             th {
               font-family: Exo2-Semibold;
               font-size: 16px;
@@ -329,8 +330,13 @@ main {
             }
           }
           tr {
-            max-width: 173px;
-            width: 100%;
+            // max-width: 173px;
+            // width: 100%;
+            border-right: 1px solid rgb(0, 0, 0, 0.2);
+            border-top: 1px solid rgb(0, 0, 0, 0.2);
+            padding: 24px 16px 0px 16px;
+            background-color: #f9f9f9;
+            position: relative;
             td {
               border-left: 1px solid #00000033;
               border-bottom: 1px solid #00000033;
@@ -672,6 +678,1408 @@ main {
           background-color: #fff;
           border-radius: 30px;
           align-items: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    ///////////////////SECTION HERO /////////////////////
+
+    .hero {
+      .container {
+        .heros {
+          // @include flex-items();
+          // justify-content: space-between;
+          flex-direction: column;
+          gap: 73px;
+          .hero-content {
+            // @include flex-items();
+            align-items: center;
+            // justify-content: space-between;
+            // flex-direction: column;
+            gap: 49px;
+            .hero-title {
+              max-width: 690px;
+              // font-family: Exo2-Semibold;
+              font-size: 44px;
+              line-height: 55px;
+              text-align: center;
+              // color: $title-btn-color;
+            }
+            p {
+              // font-family: PT Sans;
+              // font-size: 16px;
+              // line-height: 24px;
+              max-width: 690px;
+              width: 100%;
+              // color: $p-color;
+              text-align: center;
+            }
+            .underline {
+              text-align: center;
+              a {
+                font-family: PT Sans-Bold;
+                // font-size: 16px;
+                // line-height: 24px;
+                text-align: center;
+                // color: $title-btn-color;
+              }
+
+              // .line {
+              //   border: 3px solid $line-color;
+              //   max-width: 104px;
+              // }
+            }
+          }
+        }
+      }
+    }
+
+    ///////////////////SECTION SEARCH /////////////////////
+    .search {
+      margin: 41px 0;
+      .container {
+        .cards {
+          @include flex-items();
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 16px;
+          box-shadow: none;
+          .card {
+            display: flex;
+            border-right: none;
+            padding: 32px 140px 40px 32px;
+            margin: 0;
+            box-shadow: 0px 4px 15px 0px #0000001f;
+            border-radius: 20px;
+            gap: 32px;
+            // .circle {
+            //   width: 92px;
+            //   height: 92px;
+            //   background-color: $circle-color;
+            //   border-radius: 46px;
+            //   margin-bottom: 24px;
+            //   .img1 {
+            //     margin: 21px;
+            //   }
+            //   .img2 {
+            //     margin: 21px 22px;
+            //   }
+            //   .img3 {
+            //     margin: 27px 12px;
+            //   }
+            // }
+
+            .card-content {
+              display: flex;
+              flex-direction: column;
+              max-width: 394px;
+              // gap: 20px;
+              // h4 {
+              //   font-family: Exo2-Semibold;
+              //   font-size: 20px;
+              //   line-height: 27px;
+              //   margin-bottom: 16px;
+              //   text-align: left;
+              // }
+              // p {
+              //   font-family: PT Sans;
+              //   font-size: 16px;
+              //   line-height: 24px;
+              //   text-align: left;
+              // }
+            }
+          }
+          .end {
+            border-right: none;
+          }
+        }
+      }
+    }
+
+    ///////////////////SECTION PROFITABLE /////////////////////
+
+    .profitable {
+      .container {
+        .profitable-content {
+          // position: relative;
+          margin-top: 97px;
+          h2 {
+            // position: absolute;
+            top: 112px;
+            left: 104px;
+            // z-index: 2;
+            max-width: 288px;
+            // color: $second-color;
+            // font-family: Exo2-Semibold;
+            // font-size: 48px;
+            // font-weight: 600;
+            // line-height: 125%;
+          }
+          .rectangle {
+            // position: absolute;
+            // z-index: 1;
+            // top: 0;
+            // left: 0;
+            // max-width: 100%;
+            width: 600px;
+            height: 383px;
+          }
+          .main1 {
+            // position: absolute;
+            // z-index: 0;
+            // top: 0;
+            // left: 200px;
+            width: 729px;
+            height: 383px;
+            // max-width: 100%;
+          }
+        }
+      }
+    }
+
+    ///////////////////SECTION LOREMS /////////////////////
+
+    .lorems {
+      margin-top: 520px;
+      // .container {
+      //   .cards {
+      //     display: flex;
+      //     flex-wrap: wrap;
+      //     padding-left: 66px;
+      .card {
+        // display: flex;
+        // align-items: center;
+        // gap: 40px;
+        // max-width: 447px;
+        // margin: 0px 140px 62px 0px;
+        margin-left: 134px;
+        // .circle {
+        //   width: 80px;
+        //   height: 80px;
+        //   background-color: $circle-color;
+        //   border-radius: 40px;
+        //   .img1 {
+        //     margin: 14px 18px 20px;
+        //   }
+        //   .img2 {
+        //     margin: 15px 20px;
+        //   }
+        //   .img3 {
+        //     margin: 18px;
+        //   }
+        //   .img4 {
+        //     margin: 15px 18px;
+        //   }
+        // }
+        // .card-title {
+        //   display: flex;
+        //   flex-direction: column;
+        //   gap: 16px;
+        //   .title {
+        //     font-family: Exo2-Semibold;
+        //     font-size: 20px;
+        //     line-height: 27px;
+        //     text-align: left;
+        //     color: $title-btn-color;
+        //   }
+        //   p {
+        //     font-family: PT Sans;
+        //     font-size: 16px;
+        //     line-height: 24px;
+        //     text-align: left;
+        //     color: $p-color;
+        //   }
+        // }
+      }
+      // }
+      // }
+    }
+
+    ///////////////////SECTION COMPLEATED /////////////////////
+
+    .compleated {
+      .container {
+        .compleated-content {
+          max-width: 687px;
+          .title {
+            // font-family: Exo2-Semibold;
+            font-size: 44px;
+            line-height: 55px;
+            // text-align: left;
+            // color: $title-btn-color;
+            margin-bottom: 32px;
+          }
+          p {
+            //   font-family: PT Sans;
+            //   font-size: 16px;
+            //   line-height: 24px;
+            //   text-align: left;
+            //   color: $p-color;
+            margin-bottom: 40px;
+          }
+          .cards {
+            // @include flex-items();
+            flex-direction: column;
+            // justify-content: space-between;
+            gap: 32px;
+            .card {
+              padding: 0px 32px 40px;
+              // border-radius: 10px;
+              // box-shadow: 0px 4px 15px 0px #0000001f;
+              img {
+                width: 690px;
+                height: 247px;
+                margin: 0px -32px;
+                // border-radius: 10px 10px 0 0;
+                margin-bottom: 24px;
+              }
+              // .card-title {
+              //   font-family: Exo2-Semibold;
+              //   font-size: 20px;
+              //   line-height: 27px;
+              //   text-align: left;
+              //   margin-bottom: 16px;
+              //   color: $title-btn-color;
+              // }
+              // .card-description {
+              //   font-family: PT Sans;
+              //   font-size: 16px;
+              //   font-weight: 400;
+              //   line-height: 24px;
+              //   text-align: left;
+              //   color: $p-color;
+              //   margin-bottom: 32px;
+              // }
+              // .card-price {
+              //   font-family: Exo2-Semibold;
+              //   font-size: 16px;
+              //   font-weight: 600;
+              //   line-height: 21.6px;
+              //   text-align: left;
+              //   color: $title-btn-color;
+              //   margin-bottom: 10px;
+              // }
+              // .line {
+              //   border: 3px solid $line-color;
+              //   max-width: 75px;
+              //   margin-bottom: 32px;
+              // }
+            }
+          }
+        }
+      }
+    }
+
+    ///////////////////SECTION CLIENT /////////////////////
+
+    .client {
+      margin-top: 172px;
+      .container {
+        .client-content {
+          // background-color: $main-color;
+          padding: 64px 20px;
+          // display: flex;
+          flex-direction: column;
+          gap: 48px;
+          .title {
+            // font-family: Exo2-Semibold;
+            font-size: 44px;
+            line-height: 55px;
+            // text-align: left;
+            // color: $second-color;
+            // max-width: 477px;
+          }
+          .table {
+            // background-color: $second-color;
+            padding: 24px 20px;
+            // border-radius: 8px;
+            // max-width: 690px;
+            // .table-content {
+            //   display: flex;
+            //   gap: 194px;
+            //   p {
+            //     font-family: PT Sans;
+            //     font-size: 11px;
+            //     line-height: 16.5px;
+            //     text-align: left;
+            //     // max-width: 274px;
+            //   }
+            // }
+            // .line {
+            //   border: 1px solid #d7d7dd;
+            //   margin: 32px 0;
+            //   max-width: 588px;
+            // }
+          }
+          // table {
+          //   padding: 16px;
+          //   .th-title {
+          //     background-color: $main-color;
+          //     border-right: 1px solid rgb(0, 0, 0, 0.2);
+          //     th {
+          //       font-family: Exo2-Semibold;
+          //       font-size: 16px;
+          //       line-height: 24px;
+          //       text-align: center;
+          //       color: $second-color;
+          //       border-left: 1px solid #00000033;
+          //       padding: 8px 36px;
+          //       background-color: $main-color;
+          //     }
+          //   }
+          //   tr {
+          //     // max-width: 173px;
+          //     // width: 100%;
+          //     border-right: 1px solid rgb(0, 0, 0, 0.2);
+          //     border-top: 1px solid rgb(0, 0, 0, 0.2);
+          //     padding: 24px 16px 0px 16px;
+          //     background-color: #f9f9f9;
+          //     position: relative;
+          //     td {
+          //       border-left: 1px solid #00000033;
+          //       border-bottom: 1px solid #00000033;
+          //       background-color: #f9f9fb;
+          //       padding: 16px;
+          //       p {
+          //         font-family: PT Sans;
+          //         font-size: 14px;
+          //         line-height: 18.9px;
+          //         text-align: left;
+          //         color: $p-color;
+          //         max-width: 141px;
+          //       }
+          //       h5 {
+          //         font-family: Exo2-Semibold;
+          //         font-size: 14px;
+          //         line-height: 18.9px;
+          //         text-align: left;
+          //         color: $title-btn-color;
+          //       }
+          //       .title {
+          //         font-family: Pt Sans-Bold;
+          //         font-size: 14px;
+          //         line-height: 18.9px;
+          //         text-align: left;
+          //         color: $title-btn-color;
+          //         background-color: transparent;
+          //       }
+          //       .phone {
+          //         font-family: PT Sans;
+          //         font-size: 12px;
+          //         line-height: 18.9px;
+          //         text-align: left;
+          //         max-width: 117px;
+          //       }
+          //     }
+          //   }
+          // }
+        }
+      }
+    }
+
+    ///////////////////SECTION DELIVERY /////////////////////
+
+    .delivery {
+      margin: 88px 0;
+      .container {
+        .delivery-content {
+          .title {
+            // font-family: Exo2-Semibold;
+            font-size: 44px;
+            line-height: 55px;
+            // align-items: start;
+            // margin-bottom: 48px;
+          }
+          .cards {
+            // @include flex-items();
+            // gap: 24px;
+            flex-direction: column;
+            padding-left: 0px;
+            .card {
+              // padding: 32px 96px;
+              // box-shadow: 0px 4px 15px 0px #0000001f;
+              // border-radius: 10px;
+              // @include flex-items();
+              img {
+                width: 0;
+                height: 0;
+                border-radius: 0;
+                margin-right: 0;
+              }
+              // .card-content {
+              //   display: flex;
+              //   align-items: start;
+              //   flex-direction: column;
+              //   gap: 24px;
+              //   .card-title {
+              //     font-family: Exo2-Semibold;
+              //     font-size: 20px;
+              //     line-height: 25px;
+              //   }
+              //   .card-line {
+              //     border: 3px solid #ffce50;
+              //     max-width: 86px;
+              //     width: 100%;
+              //   }
+              //   p {
+              //     font-family: PT Sans;
+              //     font-size: 16px;
+              //     line-height: 24px;
+              //     max-width: 568px;
+              //   }
+            }
+          }
+        }
+      }
+    }
+
+    ///////////////////SECTION TRUST /////////////////////
+
+    .trust {
+      .container {
+        .trust-content {
+          // font-family: Exo2-Semibold;
+          font-size: 44px;
+          line-height: 55px;
+          // text-align: left;
+          margin-bottom: 64px;
+          // color: $title-btn-color;
+        }
+        .cards {
+          // display: flex;
+          // flex-wrap: wrap;
+          // gap: 60px;
+          padding: 0;
+          .card {
+            // border-right: 1px solid #d7d7dd;
+            // display: flex;
+            // align-items: center;
+            // flex-direction: column;
+            padding-right: 124px;
+
+            // img {
+            //   margin-bottom: 32px;
+            // }
+            // .title {
+            //   font-family: Exo2-Semibold;
+            //   font-size: 20px;
+            //   line-height: 27px;
+            //   margin-bottom: 14px;
+            // }
+            // p {
+            //   font-family: PT Sans;
+            //   font-size: 14px;
+            //   line-height: 21px;
+            //   color: $p-color;
+            //   max-width: 184px;
+            // }
+          }
+          .four {
+            // border-right: none;
+            // padding-right: none;
+            // p {
+            //   max-width: 225px;
+            // }
+            padding-right: 0;
+          }
+          .two {
+            // padding-top: 5px;
+            border-right: none;
+            img {
+              margin-bottom: 58px;
+            }
+          }
+          .three {
+            // padding-top: 1px;
+            padding-right: 159px;
+          }
+
+          // .five {
+          //   // padding-top: 27px;
+          //   // img {
+          //   //   margin-bottom: 56px;
+          //   // }
+          // }
+
+          // .six {
+          //   padding-top: 9px;
+          //   border-right: none;
+          //   img {
+          //     margin-bottom: 36px;
+          //   }
+          // }
+
+          .seven {
+            padding-top: 4px;
+            padding-right: 134px;
+            img {
+              margin-bottom: 33px;
+            }
+          }
+
+          // .eight {
+          //   border-right: none;
+          //   padding-right: none;
+          //   padding-top: 22px;
+          //   img {
+          //     margin-bottom: 59px;
+          //   }
+          // }
+        }
+      }
+    }
+
+    ///////////////////SECTION EMPLOYEE /////////////////////
+
+    .employee {
+      margin: 100px 0;
+      .container {
+        .employee-title {
+          // font-family: Exo2-Semibold;
+          font-size: 44px;
+          line-height: 55px;
+          margin-bottom: 56px;
+        }
+        .cards {
+          // display: flex;
+          // flex-wrap: wrap;
+          // gap: 30px;
+          .card {
+            // box-shadow: 0px 4px 15px 0px #00000026;
+            // border-radius: 10px;
+            padding: 24px 65px 32px 30px;
+            // display: flex;
+            flex-direction: column;
+            border-left: 30px solid $main-color;
+            .card-content {
+              // display: flex;
+              // flex-direction: column;
+              padding: 12px;
+              // .title {
+              //   font-family: Exo2-Semibold;
+              //   font-size: 20px;
+              //   line-height: 24px;
+              //   text-align: left;
+              //   margin-bottom: 12px;
+              //   color: $title-btn-color;
+              // }
+              // p {
+              //   font-family: PT Sans;
+              //   font-size: 14px;
+              //   line-height: 21px;
+              //   text-align: left;
+              //   margin-bottom: 16px;
+              //   color: $p-color;
+              // }
+              // .seties {
+              //   // display: flex;
+              //   // gap: 20px;
+
+              // }
+
+              // .line {
+              //   border: 2px solid #ffce50;
+              //   max-width: 86px;
+              //   margin-bottom: 32px;
+              // }
+            }
+            .img {
+              width: 100px;
+              height: 100px;
+            }
+          }
+          .three {
+            padding: 32px 66px 40px 32px;
+          }
+
+          .four {
+            padding: 32px 83px 40px 32px;
+          }
+
+          .six {
+            padding: 32px 78px 40px 32px;
+          }
+        }
+      }
+    }
+
+    ///////////////////SECTION CONTACT /////////////////////
+
+    .contact {
+      .container {
+        .contact-title {
+          // font-family: Exo2-Semibold;
+          font-size: 44px;
+          line-height: 55px;
+          // text-align: left;
+          // margin-bottom: 72px;
+        }
+
+        .contacts-inn {
+          // display: flex;
+          flex-direction: column;
+          // gap: 64px;
+          // .contacts {
+          //   .phones {
+          //     display: flex;
+          //     gap: 36px;
+          //     margin: 22px 0;
+          //     .phone {
+          //       .title {
+          //         font-family: PT Sans;
+          //         font-size: 14px;
+          //         line-height: 21px;
+          //         text-align: left;
+          //       }
+          //       .description {
+          //         font-family: Exo2-Semibold;
+          //         font-size: 20px;
+          //         line-height: 24px;
+          //         text-align: left;
+          //         width: 188px;
+          //       }
+          //     }
+          //   }
+          // }
+
+          // .inn {
+          //   border: 1px solid #e9eaf2;
+          //   border-radius: 5px;
+          //   background-color: #f9f9fb;
+          //   padding: 40px 48px;
+          //   .inn-content {
+          //     display: flex;
+          //     gap: 56px;
+          //     border-bottom: 1px solid #e9eaf2;
+          //     padding: 16px 0;
+          //     p {
+          //       font-family: PT Sans;
+          //       font-size: 16px;
+          //       line-height: 20px;
+          //       text-align: left;
+          //       color: $p-color;
+          //       max-width: 175px;
+          //       width: 100%;
+          //     }
+          //     h5 {
+          //       font-family: Exo2-Semibold;
+          //       font-size: 16px;
+          //       line-height: 20px;
+          //       color: $title-btn-color;
+          //     }
+          //   }
+          // }
+        }
+      }
+    }
+
+    ///////////////////SECTION VIDEOS /////////////////////
+
+    .videos {
+      margin: 64px 0;
+      .container {
+        .video {
+          background-image: url(../images/image-end.png);
+          background-size: 675px 405px;
+          background-repeat: no-repeat;
+          .play {
+            width: 0;
+            height: 0px;
+            padding: 0;
+            background-color: transparent;
+            // border-radius: 0px;
+            // align-items: center;
+            img {
+              width: 0;
+              height: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  main {
+    ///////////////////SECTION HERO /////////////////////
+
+    .hero {
+      .container {
+        .heros {
+          @include flex-items();
+          justify-content: space-between;
+
+          .hero-content {
+            @include flex-items();
+            align-items: start;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 40px;
+            .hero-title {
+              max-width: 610px;
+              font-family: Exo2-Semibold;
+              font-size: 52px;
+              line-height: 65px;
+              text-align: left;
+              color: $title-btn-color;
+            }
+            p {
+              font-family: PT Sans;
+              font-size: 16px;
+              line-height: 24px;
+              max-width: 525px;
+              width: 100%;
+              color: $p-color;
+              text-align: left;
+            }
+            .underline {
+              text-align: left;
+              a {
+                font-family: PT Sans-Bold;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: left;
+                color: $title-btn-color;
+              }
+
+              .line {
+                border: 3px solid $line-color;
+                max-width: 104px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    ///////////////////SECTION SEARCH /////////////////////
+    .search {
+      margin: 67px 0;
+      .container {
+        .cards {
+          @include flex-items();
+          justify-content: space-between;
+          box-shadow: 0px 4px 20px 0px #00000026;
+          border-radius: 20px;
+          .card {
+            border-right: 1px solid #d7d7dd;
+            padding: 0 65px 16px 65px;
+            margin: 40px 28px;
+            .circle {
+              width: 92px;
+              height: 92px;
+              background-color: $circle-color;
+              border-radius: 46px;
+              margin-bottom: 24px;
+              .img1 {
+                margin: 21px;
+              }
+              .img2 {
+                margin: 21px 22px;
+              }
+              .img3 {
+                margin: 27px 12px;
+              }
+            }
+            h4 {
+              font-family: Exo2-Semibold;
+              font-size: 20px;
+              line-height: 27px;
+              margin-bottom: 16px;
+              text-align: left;
+            }
+            p {
+              font-family: PT Sans;
+              font-size: 16px;
+              line-height: 24px;
+              text-align: left;
+            }
+          }
+          .end {
+            border-right: none;
+          }
+        }
+      }
+    }
+
+    ///////////////////SECTION PROFITABLE /////////////////////
+
+    .profitable {
+      .container {
+        .profitable-content {
+          position: relative;
+          margin-top: 100px;
+          h2 {
+            position: absolute;
+            top: 178px;
+            left: 90px;
+            z-index: 2;
+            max-width: 350px;
+            // max-width: 362px;
+            color: $second-color;
+            font-family: Exo2-Semibold;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 125%;
+          }
+          .rectangle {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            max-width: 100%;
+          }
+          .main1 {
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            right: 0;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+
+    ///////////////////SECTION LOREMS /////////////////////
+
+    .lorems {
+      margin-top: 72px;
+      .container {
+        .cards {
+          display: flex;
+          flex-wrap: wrap;
+          padding-left: 66px;
+          .card {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            max-width: 447px;
+            margin: 0px 140px 62px 0px;
+            .circle {
+              width: 80px;
+              height: 80px;
+              background-color: $circle-color;
+              border-radius: 40px;
+              .img1 {
+                margin: 14px 18px 20px;
+              }
+              .img2 {
+                margin: 15px 20px;
+              }
+              .img3 {
+                margin: 18px;
+              }
+              .img4 {
+                margin: 15px 18px;
+              }
+            }
+            .card-title {
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+              .title {
+                font-family: Exo2-Semibold;
+                font-size: 20px;
+                line-height: 27px;
+                text-align: left;
+                color: $title-btn-color;
+              }
+              p {
+                font-family: PT Sans;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: left;
+                color: $p-color;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    ///////////////////SECTION COMPLEATED /////////////////////
+
+    .compleated {
+      .container {
+        .compleated-content {
+          max-width: 667px;
+          .title {
+            font-family: Exo2-Semibold;
+            font-size: 48px;
+            line-height: 60px;
+            text-align: left;
+            color: $title-btn-color;
+            margin-bottom: 32px;
+          }
+          p {
+            font-family: PT Sans;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: left;
+            color: $p-color;
+            margin-bottom: 56px;
+          }
+          .cards {
+            @include flex-items();
+            justify-content: space-between;
+            gap: 30px;
+            .card {
+              padding: 0px 70px 0px 32px;
+              border-radius: 10px;
+              box-shadow: 0px 4px 15px 0px #0000001f;
+              img {
+                margin: 0px -70px 0px -32px;
+                border-radius: 10px 10px 0 0;
+                margin-bottom: 24px;
+              }
+              .card-title {
+                font-family: Exo2-Semibold;
+                font-size: 20px;
+                line-height: 27px;
+                text-align: left;
+                margin-bottom: 16px;
+                color: $title-btn-color;
+              }
+              .card-description {
+                font-family: PT Sans;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: left;
+                color: $p-color;
+                margin-bottom: 32px;
+              }
+              .card-price {
+                font-family: Exo 2;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 21.6px;
+                text-align: left;
+                color: $title-btn-color;
+                margin-bottom: 10px;
+              }
+              .line {
+                border: 3px solid $line-color;
+                max-width: 75px;
+                margin-bottom: 32px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    ///////////////////SECTION CLIENT /////////////////////
+
+    .client {
+      margin-top: 212px;
+      .container {
+        .client-content {
+          background-color: $main-color;
+          padding: 85px 66px 85px 81px;
+          display: flex;
+          gap: 70px;
+          .title {
+            font-family: Exo2-Semibold;
+            font-size: 48px;
+            line-height: 60px;
+            text-align: left;
+            color: $second-color;
+            max-width: 477px;
+          }
+          .table {
+            background-color: $second-color;
+            padding: 28px 41px;
+            border-radius: 8px;
+            max-width: 690px;
+            .table-content {
+              display: flex;
+              gap: 194px;
+              p {
+                font-family: PT Sans;
+                font-size: 11px;
+                line-height: 16.5px;
+                text-align: left;
+                // max-width: 274px;
+              }
+            }
+            .line {
+              border: 1px solid #d7d7dd;
+              margin: 32px 0;
+              max-width: 588px;
+            }
+          }
+          table {
+            padding: 16px;
+            .th-title {
+              background-color: $main-color;
+              border-right: 1px solid rgb(0, 0, 0, 0.2);
+              th {
+                font-family: Exo2-Semibold;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                color: $second-color;
+                border-left: 1px solid #00000033;
+                padding: 8px 36px;
+                background-color: $main-color;
+              }
+            }
+            tr {
+              // max-width: 173px;
+              // width: 100%;
+              border-right: 1px solid rgb(0, 0, 0, 0.2);
+              border-top: 1px solid rgb(0, 0, 0, 0.2);
+              padding: 24px 16px 0px 16px;
+              background-color: #f9f9f9;
+              position: relative;
+              td {
+                border-left: 1px solid #00000033;
+                border-bottom: 1px solid #00000033;
+                background-color: #f9f9fb;
+                padding: 16px;
+                p {
+                  font-family: PT Sans;
+                  font-size: 14px;
+                  line-height: 18.9px;
+                  text-align: left;
+                  color: $p-color;
+                  max-width: 141px;
+                }
+                h5 {
+                  font-family: Exo2-Semibold;
+                  font-size: 14px;
+                  line-height: 18.9px;
+                  text-align: left;
+                  color: $title-btn-color;
+                }
+                .title {
+                  font-family: Pt Sans-Bold;
+                  font-size: 14px;
+                  line-height: 18.9px;
+                  text-align: left;
+                  color: $title-btn-color;
+                  background-color: transparent;
+                }
+                .phone {
+                  font-family: PT Sans;
+                  font-size: 12px;
+                  line-height: 18.9px;
+                  text-align: left;
+                  max-width: 117px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    ///////////////////SECTION DELIVERY /////////////////////
+
+    .delivery {
+      margin: 120px 0;
+      .container {
+        .delivery-content {
+          .title {
+            font-family: Exo2-Semibold;
+            font-size: 48px;
+            line-height: 60px;
+            align-items: start;
+            margin-bottom: 48px;
+          }
+          .cards {
+            @include flex-items();
+            gap: 24px;
+            flex-direction: column;
+            padding-left: 48px;
+            .card {
+              padding: 32px 96px;
+              box-shadow: 0px 4px 15px 0px #0000001f;
+              border-radius: 10px;
+              @include flex-items();
+              img {
+                border-radius: 4px;
+                margin-right: 56px;
+              }
+              .card-content {
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                gap: 24px;
+                .card-title {
+                  font-family: Exo2-Semibold;
+                  font-size: 20px;
+                  line-height: 25px;
+                }
+                .card-line {
+                  border: 3px solid #ffce50;
+                  max-width: 86px;
+                  width: 100%;
+                }
+                p {
+                  font-family: PT Sans;
+                  font-size: 16px;
+                  line-height: 24px;
+                  max-width: 568px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    ///////////////////SECTION TRUST /////////////////////
+
+    .trust {
+      .container {
+        .trust-content {
+          font-family: Exo2-Semibold;
+          font-size: 48px;
+          line-height: 60px;
+          text-align: left;
+          margin-bottom: 90px;
+          color: $title-btn-color;
+        }
+        .cards {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 60px;
+          padding: 0 60px;
+          .card {
+            border-right: 1px solid #d7d7dd;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-right: 57px;
+
+            img {
+              margin-bottom: 32px;
+            }
+            .title {
+              font-family: Exo2-Semibold;
+              font-size: 20px;
+              line-height: 27px;
+              margin-bottom: 14px;
+            }
+            p {
+              font-family: PT Sans;
+              font-size: 14px;
+              line-height: 21px;
+              color: $p-color;
+              max-width: 184px;
+            }
+          }
+          .four {
+            border-right: none;
+            padding-right: none;
+            p {
+              max-width: 225px;
+            }
+          }
+          .two {
+            padding-top: 5px;
+            img {
+              margin-bottom: 58px;
+            }
+          }
+          .three {
+            padding-top: 1px;
+          }
+
+          .five {
+            padding-top: 27px;
+            img {
+              margin-bottom: 56px;
+            }
+          }
+
+          .six {
+            padding-top: 9px;
+            img {
+              margin-bottom: 36px;
+            }
+          }
+
+          .seven {
+            padding-top: 4px;
+            padding-right: 35px;
+            img {
+              margin-bottom: 33px;
+            }
+          }
+
+          .eight {
+            border-right: none;
+            padding-right: none;
+            padding-top: 22px;
+            img {
+              margin-bottom: 59px;
+            }
+          }
+        }
+      }
+    }
+
+    ///////////////////SECTION EMPLOYEE /////////////////////
+
+    .employee {
+      margin: 130px 0;
+      .container {
+        .employee-title {
+          font-family: Exo2-Semibold;
+          font-size: 48px;
+          line-height: 60px;
+          margin-bottom: 72px;
+        }
+        .cards {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 30px;
+          .card {
+            box-shadow: 0px 4px 15px 0px #00000026;
+            border-radius: 10px;
+            padding: 32px 179px 40px 32px;
+            display: flex;
+            border-left: 51px solid $main-color;
+            .card-content {
+              display: flex;
+              flex-direction: column;
+              padding: 15px;
+              .title {
+                font-family: Exo2-Semibold;
+                font-size: 20px;
+                line-height: 24px;
+                text-align: left;
+                margin-bottom: 12px;
+                color: $title-btn-color;
+              }
+              p {
+                font-family: PT Sans;
+                font-size: 14px;
+                line-height: 21px;
+                text-align: left;
+                margin-bottom: 16px;
+                color: $p-color;
+              }
+              .seties {
+                display: flex;
+                gap: 20px;
+              }
+
+              .line {
+                border: 2px solid #ffce50;
+                max-width: 86px;
+                margin-bottom: 32px;
+              }
+            }
+          }
+          .three {
+            padding: 32px 185px 40px 32px;
+          }
+
+          .four {
+            padding: 32px 197px 40px 32px;
+          }
+
+          .six {
+            padding: 32px 195px 40px 32px;
+          }
+        }
+      }
+    }
+
+    ///////////////////SECTION CONTACT /////////////////////
+
+    .contact {
+      .container {
+        .contact-title {
+          font-family: Exo2-Semibold;
+          font-size: 48px;
+          line-height: 60px;
+          text-align: left;
+          margin-bottom: 72px;
+        }
+
+        .contacts-inn {
+          display: flex;
+          gap: 198px;
+          .contacts {
+            .phones {
+              display: flex;
+              gap: 36px;
+              margin: 22px 0;
+              .phone {
+                .title {
+                  font-family: PT Sans;
+                  font-size: 14px;
+                  line-height: 21px;
+                  text-align: left;
+                }
+                .description {
+                  font-family: Exo2-Semibold;
+                  font-size: 20px;
+                  line-height: 24px;
+                  text-align: left;
+                  width: 188px;
+                }
+              }
+            }
+          }
+
+          .inn {
+            border: 1px solid #e9eaf2;
+            border-radius: 5px;
+            background-color: #f9f9fb;
+            padding: 40px 48px;
+            .inn-content {
+              display: flex;
+              gap: 56px;
+              border-bottom: 1px solid #e9eaf2;
+              padding: 16px 0;
+              p {
+                font-family: PT Sans;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: left;
+                color: $p-color;
+                max-width: 175px;
+                width: 100%;
+              }
+              h5 {
+                font-family: Exo2-Semibold;
+                font-size: 16px;
+                line-height: 20px;
+                color: $title-btn-color;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    ///////////////////SECTION VIDEOS /////////////////////
+
+    .videos {
+      margin: 46px 0;
+      .container {
+        .video {
+          background-image: url(../images/image-end.png);
+          padding: 304px 593px;
+          .play {
+            width: 60px;
+            height: 60px;
+            padding: 13px 13px 12px 20px;
+            background-color: #fff;
+            border-radius: 30px;
+            align-items: center;
+          }
         }
       }
     }
