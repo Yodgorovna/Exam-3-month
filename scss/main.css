@@ -1133,159 +1133,151 @@ main .videos .container .video .play {
   }
 }
 @media (max-width: 375px) {
-  main .hero .container .heros {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  main .hero {
+    margin-top: 75px;
   }
-  main .hero .container .heros .hero-content {
-    display: flex;
-    align-items: center;
-    align-items: start;
-    justify-content: space-between;
+  main .hero .container .heros {
     flex-direction: column;
     gap: 40px;
   }
+  main .hero .container .heros .hero-content {
+    align-items: start;
+    gap: 32px;
+  }
   main .hero .container .heros .hero-content .hero-title {
-    max-width: 610px;
-    font-family: Exo2-Semibold;
-    font-size: 52px;
-    line-height: 65px;
-    text-align: left;
-    color: #363738;
+    max-width: 690px;
+    font-size: 28px;
+    line-height: 35px;
   }
   main .hero .container .heros .hero-content p {
-    font-family: PT Sans;
-    font-size: 16px;
-    line-height: 24px;
-    max-width: 525px;
-    width: 100%;
-    color: #6b6b6c;
-    text-align: left;
-  }
-  main .hero .container .heros .hero-content .underline {
-    text-align: left;
+    font-size: 15px;
+    line-height: 22px;
+    max-width: 344px;
+    text-align: start;
   }
   main .hero .container .heros .hero-content .underline a {
-    font-family: PT Sans-Bold;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: left;
-    color: #363738;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
   }
-  main .hero .container .heros .hero-content .underline .line {
-    border: 3px solid #ffce50;
-    max-width: 104px;
+  main .hero .container .heros img {
+    width: 345px;
+    height: 253px;
   }
   main .search {
-    margin: 67px 0;
+    margin: 56px 0;
   }
   main .search .container .cards {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: space-between;
+    gap: 16px;
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1490196078);
-    border-radius: 20px;
   }
   main .search .container .cards .card {
-    border-right: 1px solid #d7d7dd;
-    padding: 0 65px 16px 65px;
-    margin: 40px 28px;
+    display: flex;
+    flex-direction: column;
+    border-right: none;
+    padding: 24px 27px 12px 32px;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 20px;
+    gap: 16px;
   }
   main .search .container .cards .card .circle {
-    width: 92px;
-    height: 92px;
-    background-color: #e9e9ec;
-    border-radius: 46px;
-    margin-bottom: 24px;
+    width: 68px;
+    height: 68px;
+    border-radius: 34px;
+    margin-bottom: 0;
   }
   main .search .container .cards .card .circle .img1 {
-    margin: 21px;
+    width: 36.96px;
+    height: 36.96px;
+    margin: 15px;
   }
   main .search .container .cards .card .circle .img2 {
-    margin: 21px 22px;
+    margin: 15px;
+    width: 34.68px;
+    height: 36.96px;
   }
   main .search .container .cards .card .circle .img3 {
-    margin: 27px 12px;
+    margin: 19px 9px;
+    width: 48.9px;
+    height: 28.79px;
   }
-  main .search .container .cards .card h4 {
-    font-family: Exo2-Semibold;
-    font-size: 20px;
-    line-height: 27px;
-    margin-bottom: 16px;
-    text-align: left;
+  main .search .container .cards .card .card-content {
+    max-width: 286px;
+    gap: 12px;
   }
-  main .search .container .cards .card p {
-    font-family: PT Sans;
-    font-size: 16px;
+  main .search .container .cards .card .card-content h4 {
+    font-size: 18px;
     line-height: 24px;
-    text-align: left;
+    margin-bottom: 0;
   }
-  main .search .container .cards .end {
-    border-right: none;
+  main .search .container .cards .card .card-content p {
+    font-size: 15px;
+    line-height: 22px;
   }
   main .profitable .container .profitable-content {
-    position: relative;
-    margin-top: 100px;
+    margin-top: 57px;
   }
   main .profitable .container .profitable-content h2 {
-    position: absolute;
-    top: 178px;
-    left: 90px;
-    z-index: 2;
-    max-width: 350px;
-    color: #fff;
-    font-family: Exo2-Semibold;
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 125%;
+    top: 0px;
+    left: 15px;
+    max-width: 345px;
+    color: #363738;
+    font-size: 28px;
+    line-height: 35px;
   }
   main .profitable .container .profitable-content .rectangle {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    max-width: 100%;
+    width: 0;
+    height: 0;
   }
   main .profitable .container .profitable-content .main1 {
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    right: 0;
-    max-width: 100%;
+    width: 0;
+    height: 0;
   }
   main .lorems {
-    margin-top: 72px;
+    margin-top: 180px;
   }
   main .lorems .container .cards {
     display: flex;
-    flex-wrap: wrap;
-    padding-left: 66px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding-left: 15px;
+    gap: 38px;
   }
   main .lorems .container .cards .card {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    max-width: 447px;
-    margin: 0px 140px 62px 0px;
+    align-items: start;
+    gap: 16px;
+    max-width: 345px;
+    margin: 0px;
   }
   main .lorems .container .cards .card .circle {
-    width: 80px;
-    height: 80px;
-    background-color: #e9e9ec;
-    border-radius: 40px;
+    width: 52px;
+    height: 52px;
+    border-radius: 27px;
   }
   main .lorems .container .cards .card .circle .img1 {
-    margin: 14px 18px 20px;
-  }
-  main .lorems .container .cards .card .circle .img2 {
-    margin: 15px 20px;
+    margin: 9px 11px;
+    width: 28px;
+    height: 29px;
   }
   main .lorems .container .cards .card .circle .img3 {
-    margin: 18px;
+    margin: 11px;
+    width: 28px;
+    height: 28px;
+  }
+  main .lorems .container .cards .card .circle .img2 {
+    margin: 10px 13px;
+    width: 25px;
+    height: 32px;
   }
   main .lorems .container .cards .card .circle .img4 {
-    margin: 15px 18px;
+    margin: 10px 11px;
+    width: 28px;
+    height: 32px;
   }
   main .lorems .container .cards .card .card-title {
     display: flex;
@@ -1294,104 +1286,77 @@ main .videos .container .video .play {
   }
   main .lorems .container .cards .card .card-title .title {
     font-family: Exo2-Semibold;
-    font-size: 20px;
-    line-height: 27px;
-    text-align: left;
-    color: #363738;
+    font-size: 18px;
+    line-height: 24px;
   }
   main .lorems .container .cards .card .card-title p {
     font-family: PT Sans;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: left;
-    color: #6b6b6c;
+    font-size: 15px;
+    line-height: 22px;
+  }
+  main .compleated {
+    margin-top: 72px;
   }
   main .compleated .container .compleated-content {
-    max-width: 667px;
+    max-width: 344px;
   }
   main .compleated .container .compleated-content .title {
-    font-family: Exo2-Semibold;
-    font-size: 48px;
-    line-height: 60px;
-    text-align: left;
-    color: #363738;
-    margin-bottom: 32px;
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 24px;
   }
   main .compleated .container .compleated-content p {
-    font-family: PT Sans;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: left;
-    color: #6b6b6c;
-    margin-bottom: 56px;
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 40px;
   }
   main .compleated .container .compleated-content .cards {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
+    flex-direction: column;
+    gap: 32px;
   }
   main .compleated .container .compleated-content .cards .card {
-    padding: 0px 70px 0px 32px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1215686275);
+    padding: 24px;
   }
   main .compleated .container .compleated-content .cards .card img {
-    margin: 0px -70px 0px -32px;
-    border-radius: 10px 10px 0 0;
+    width: 345px;
+    height: 222px;
+    margin: 0px -24px;
     margin-bottom: 24px;
   }
   main .compleated .container .compleated-content .cards .card .card-title {
-    font-family: Exo2-Semibold;
-    font-size: 20px;
-    line-height: 27px;
-    text-align: left;
-    margin-bottom: 16px;
-    color: #363738;
+    font-size: 18px;
+    line-height: 24px;
   }
   main .compleated .container .compleated-content .cards .card .card-description {
-    font-family: PT Sans;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-    color: #6b6b6c;
-    margin-bottom: 32px;
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 24px;
   }
   main .compleated .container .compleated-content .cards .card .card-price {
-    font-family: Exo 2;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 21.6px;
-    text-align: left;
-    color: #363738;
+    font-size: 15px;
+    line-height: 20px;
     margin-bottom: 10px;
   }
-  main .compleated .container .compleated-content .cards .card .line {
-    border: 3px solid #ffce50;
-    max-width: 75px;
-    margin-bottom: 32px;
+  main .compleated .container .compleated-content .cards .end {
+    width: 0px;
+    height: 0px;
   }
   main .client {
-    margin-top: 212px;
+    margin-top: 120px;
   }
   main .client .container .client-content {
-    background-color: #0b7572;
-    padding: 85px 66px 85px 81px;
-    display: flex;
-    gap: 70px;
+    padding: 32px 15px;
+    flex-direction: column;
+    gap: 40px;
   }
   main .client .container .client-content .title {
-    font-family: Exo2-Semibold;
-    font-size: 48px;
-    line-height: 60px;
-    text-align: left;
-    color: #fff;
-    max-width: 477px;
+    font-size: 28px;
+    line-height: 35px;
+    max-width: 345px;
   }
   main .client .container .client-content .table {
     background-color: #fff;
-    padding: 28px 41px;
+    padding: 24px 20px;
     border-radius: 8px;
     max-width: 690px;
   }
@@ -1401,7 +1366,7 @@ main .videos .container .video .play {
   }
   main .client .container .client-content .table .table-content p {
     font-family: PT Sans;
-    font-size: 11px;
+    font-size: 0px;
     line-height: 16.5px;
     text-align: left;
   }
@@ -1471,75 +1436,58 @@ main .videos .container .video .play {
     max-width: 117px;
   }
   main .delivery {
-    margin: 120px 0;
+    margin: 88px 0;
   }
   main .delivery .container .delivery-content .title {
-    font-family: Exo2-Semibold;
-    font-size: 48px;
-    line-height: 60px;
-    align-items: start;
-    margin-bottom: 48px;
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 30px;
   }
   main .delivery .container .delivery-content .cards {
-    display: flex;
-    align-items: center;
-    gap: 24px;
+    gap: 14px;
     flex-direction: column;
-    padding-left: 48px;
+    padding-left: 0px;
   }
   main .delivery .container .delivery-content .cards .card {
-    padding: 32px 96px;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1215686275);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
+    padding: 16px;
   }
   main .delivery .container .delivery-content .cards .card img {
-    border-radius: 4px;
-    margin-right: 56px;
+    width: 0;
+    height: 0;
+    border-radius: 0;
+    margin-right: 0;
   }
   main .delivery .container .delivery-content .cards .card .card-content {
     display: flex;
     align-items: start;
     flex-direction: column;
-    gap: 24px;
+    gap: 12px;
   }
   main .delivery .container .delivery-content .cards .card .card-content .card-title {
-    font-family: Exo2-Semibold;
     font-size: 20px;
     line-height: 25px;
   }
   main .delivery .container .delivery-content .cards .card .card-content .card-line {
-    border: 3px solid #ffce50;
-    max-width: 86px;
-    width: 100%;
+    border: 0px;
   }
   main .delivery .container .delivery-content .cards .card .card-content p {
     font-family: PT Sans;
-    font-size: 16px;
-    line-height: 24px;
-    max-width: 568px;
+    font-size: 15px;
+    line-height: 22px;
   }
   main .trust .container .trust-content {
-    font-family: Exo2-Semibold;
-    font-size: 48px;
-    line-height: 60px;
-    text-align: left;
-    margin-bottom: 90px;
-    color: #363738;
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 56px;
   }
   main .trust .container .cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 60px;
-    padding: 0 60px;
+    gap: 0px;
+    padding: 0;
   }
   main .trust .container .cards .card {
-    border-right: 1px solid #d7d7dd;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-right: 57px;
+    padding: 15px;
+    max-width: 150px;
+    margin-bottom: 48px;
   }
   main .trust .container .cards .card img {
     margin-bottom: 32px;
@@ -1555,23 +1503,26 @@ main .videos .container .video .play {
     font-size: 14px;
     line-height: 21px;
     color: #6b6b6c;
-    max-width: 184px;
+    max-width: 173px;
+    align-items: center;
+    text-align: center;
   }
   main .trust .container .cards .four {
     border-right: none;
     padding-right: none;
+    padding-right: 0;
   }
   main .trust .container .cards .four p {
-    max-width: 225px;
+    max-width: 173px;
   }
   main .trust .container .cards .two {
-    padding-top: 5px;
+    border-right: none;
   }
   main .trust .container .cards .two img {
     margin-bottom: 58px;
   }
   main .trust .container .cards .three {
-    padding-top: 1px;
+    padding-right: 0px;
   }
   main .trust .container .cards .five {
     padding-top: 27px;
@@ -1581,113 +1532,62 @@ main .videos .container .video .play {
   }
   main .trust .container .cards .six {
     padding-top: 9px;
+    border-right: none;
   }
   main .trust .container .cards .six img {
     margin-bottom: 36px;
   }
   main .trust .container .cards .seven {
     padding-top: 4px;
-    padding-right: 35px;
+    padding-right: 0px;
   }
   main .trust .container .cards .seven img {
     margin-bottom: 33px;
   }
-  main .trust .container .cards .eight {
-    border-right: none;
-    padding-right: none;
-    padding-top: 22px;
-  }
-  main .trust .container .cards .eight img {
-    margin-bottom: 59px;
-  }
   main .employee {
-    margin: 130px 0;
+    margin: 100px 0;
   }
   main .employee .container .employee-title {
-    font-family: Exo2-Semibold;
-    font-size: 48px;
-    line-height: 60px;
-    margin-bottom: 72px;
-  }
-  main .employee .container .cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    font-size: 44px;
+    line-height: 55px;
+    margin-bottom: 56px;
   }
   main .employee .container .cards .card {
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
-    border-radius: 10px;
-    padding: 32px 179px 40px 32px;
-    display: flex;
-    border-left: 51px solid #0b7572;
+    padding: 10px;
+    flex-direction: row;
+    border-left: 30px solid #0b7572;
+    align-items: center;
   }
   main .employee .container .cards .card .card-content {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
+    padding: 10px;
   }
   main .employee .container .cards .card .card-content .title {
     font-family: Exo2-Semibold;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 21px;
     text-align: left;
     margin-bottom: 12px;
     color: #363738;
   }
-  main .employee .container .cards .card .card-content p {
-    font-family: PT Sans;
-    font-size: 14px;
-    line-height: 21px;
-    text-align: left;
-    margin-bottom: 16px;
-    color: #6b6b6c;
-  }
-  main .employee .container .cards .card .card-content .seties {
-    display: flex;
-    gap: 20px;
-  }
-  main .employee .container .cards .card .card-content .line {
-    border: 2px solid #ffce50;
-    max-width: 86px;
-    margin-bottom: 32px;
+  main .employee .container .cards .card .img {
+    width: 100px;
+    height: 100px;
   }
   main .employee .container .cards .three {
-    padding: 32px 185px 40px 32px;
+    padding: 10px 5px;
   }
   main .employee .container .cards .four {
-    padding: 32px 197px 40px 32px;
+    padding: 10px 5px;
   }
   main .employee .container .cards .six {
-    padding: 32px 195px 40px 32px;
+    padding: 10 5pxpx;
   }
   main .contact .container .contact-title {
-    font-family: Exo2-Semibold;
-    font-size: 48px;
-    line-height: 60px;
-    text-align: left;
-    margin-bottom: 72px;
+    font-size: 44px;
+    line-height: 55px;
   }
   main .contact .container .contacts-inn {
-    display: flex;
-    gap: 198px;
-  }
-  main .contact .container .contacts-inn .contacts .phones {
-    display: flex;
-    gap: 36px;
-    margin: 22px 0;
-  }
-  main .contact .container .contacts-inn .contacts .phones .phone .title {
-    font-family: PT Sans;
-    font-size: 14px;
-    line-height: 21px;
-    text-align: left;
-  }
-  main .contact .container .contacts-inn .contacts .phones .phone .description {
-    font-family: Exo2-Semibold;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: left;
-    width: 188px;
+    flex-direction: column;
   }
   main .contact .container .contacts-inn .inn {
     border: 1px solid #e9eaf2;
@@ -1697,7 +1597,8 @@ main .videos .container .video .play {
   }
   main .contact .container .contacts-inn .inn .inn-content {
     display: flex;
-    gap: 56px;
+    flex-direction: column;
+    gap: 14px;
     border-bottom: 1px solid #e9eaf2;
     padding: 16px 0;
   }
@@ -1717,18 +1618,21 @@ main .videos .container .video .play {
     color: #363738;
   }
   main .videos {
-    margin: 46px 0;
+    margin: 64px 0;
   }
   main .videos .container .video {
     background-image: url(../images/image-end.png);
-    padding: 304px 593px;
+    background-size: 327px 196px;
+    background-repeat: no-repeat;
   }
   main .videos .container .video .play {
-    width: 60px;
-    height: 60px;
-    padding: 13px 13px 12px 20px;
-    background-color: #fff;
-    border-radius: 30px;
-    align-items: center;
+    width: 0;
+    height: 0px;
+    padding: 0;
+    background-color: transparent;
+  }
+  main .videos .container .video .play img {
+    width: 0;
+    height: 0px;
   }
 }/*# sourceMappingURL=main.css.map */
